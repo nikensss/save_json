@@ -13,5 +13,5 @@ run = {
 }
 
 pprint(run)
-with open('data_more.json', 'w') as fp:
-    json.dump(run, fp)
+with open('data.json', 'w') as fp:
+    json.dump(run, fp, sort_keys=True, indent=4, separators=(',', ': '))
